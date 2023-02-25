@@ -14,7 +14,7 @@ SELECT
 	event_name, 
 	event_payload
 FROM %s
-WHERE stream_id = $1
+WHERE stream_id = ?
 ORDER BY stream_version ASC;
 `
 	defaultInsertQuery = `
